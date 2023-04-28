@@ -1,0 +1,26 @@
+.button {
+  display: inline-flex;
+  padding: 10px 20px;
+  color: $color-default-white;
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    border: none;
+    background-color: $button-gradient;
+  }
+
+  @include active {
+    border: none;
+    background-color: $button-gradient;
+    opacity: 0.8;
+  }
+}
