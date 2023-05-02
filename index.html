@@ -17,18 +17,46 @@
     <link rel="preload" href="./fonts/AlumniSans-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedRegular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedRegular.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedLight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensedLight.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="header">
+        <div class="container">
+          <header class="header__header">
+            <a class="header__logo" href="#">
+              <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="122" height="44">
+            </a>
+            <div class="header__wrapper">
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </header>
+          <section class="header__hero hero">
+            <div class="hero__description">
+              <p>омск</p>
+              <h1>Фитнес центр</h1>
+              <ul>
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a class="hero__button button" href="#season-tickets">Купить абонемент</a>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source type="image/webp" media="(max-width:1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+                <img src="img/hero-desktop.jpg" width="500" height="556" alt="Фото мужчины атлета в черной футболке с логотипом Супермена." srcset="img/hero-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </section>
+        </div>
+      </div>
       <main>
       </main>
       <footer>
