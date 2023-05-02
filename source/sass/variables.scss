@@ -32,7 +32,11 @@ $color-grey:                        #787878;
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
-$hero-gradient:                     conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+$hero-gradient-desktop:             conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+
+$hero-gradient-tablet:              conic-gradient(from 155.49deg at 20.7% 35.74%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+
+$hero-gradient-mobile:              conic-gradient(from 167.26deg at 35.31% 34.22%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
 
 $video-gradient:                    linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%);
 

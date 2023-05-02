@@ -1,0 +1,94 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  min-height: 658px;
+  background: $hero-gradient-desktop;
+
+  @include vp-1199 {
+    padding-top: 34px;
+    padding-bottom: 30px;
+    min-height: 554px;
+    background: $hero-gradient-tablet;
+  }
+
+  @include vp-767 {
+    padding-top: 16px;
+    min-height: 491px;
+    background: $hero-gradient-mobile;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    @include vp-1199 {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    width: 60%;
+    justify-content: flex-end;
+
+    a {
+      margin: 0 0 0 20px;
+      font-family: $ff-alumni-sans;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      color: $color-default-white;
+
+      @include vp-1199 {
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.02em;
+      }
+
+      @include vp-767 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @include hover-focus {
+        text-decoration: underline;
+      }
+
+      @include active {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__logo {
+    cursor: unset;
+
+    @include vp-1199 {
+      padding: 6px 0;
+    }
+
+    @include vp-767 {
+      padding: 4px 0;
+    }
+
+    img {
+      height: 44px;
+
+      @include vp-1199 {
+        width: 82px;
+        height: 17px;
+      }
+
+      @include vp-767 {
+        width: 67px;
+        height: 16px;
+      }
+    }
+  }
+}
