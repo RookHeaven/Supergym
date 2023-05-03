@@ -1449,9 +1449,9 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid #ffffff;
   cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .button:disabled, .button--disabled {
   opacity: 0.5;
@@ -2462,6 +2462,232 @@ button,
 }
 .hero__image img {
   background-color: #102654;
+}
+
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1199px) {
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .gym {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+.gym__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 55px;
+     -moz-column-gap: 55px;
+          column-gap: 55px;
+}
+@media (max-width: 1199px) {
+  .gym__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .gym__wrapper {
+    max-width: unset;
+    padding: 0;
+  }
+}
+.gym__description {
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 36%;
+}
+@media (max-width: 1199px) {
+  .gym__description {
+    text-align: center;
+    width: auto;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .gym__description {
+    padding: 0 15px;
+    text-align: left;
+  }
+}
+.gym__description h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .gym__description h2 {
+    margin-right: 15px;
+    margin-bottom: 0;
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__description h2 {
+    margin-bottom: 6px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+.gym__description span {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 1199px) {
+  .gym__description span {
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__description span {
+    margin-bottom: 24px;
+  }
+}
+.gym__description p {
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 24px;
+}
+.gym__description p:not(:last-child) {
+  margin-bottom: 7px;
+}
+@media (max-width: 1199px) {
+  .gym__description p {
+    padding: 0 50px;
+  }
+  .gym__description p:last-child {
+    display: none;
+  }
+  .gym__description p:not(:last-child) {
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__description p {
+    padding: 0 30px 0 0;
+  }
+  .gym__description p:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 1199px) {
+  .gym__picture {
+    width: 100%;
+  }
+  .gym__picture img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .gym__picture {
+    margin-bottom: 40px;
+  }
+}
+
+.video {
+  position: absolute;
+  right: 47%;
+  top: 72%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 364px;
+  height: 228px;
+}
+@media (max-width: 1199px) {
+  .video {
+    right: 50%;
+    top: 85%;
+    width: 266px;
+    height: 167px;
+  }
+}
+@media (max-width: 767px) {
+  .video {
+    position: relative;
+    bottom: 0;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .video img {
+    width: 100%;
+  }
+}
+.video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video__button {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1199px) {
+  .video__button {
+    width: 73px;
+    height: 73px;
+    top: calc(50% - 34px);
+    left: calc(50% - 38px);
+  }
+}
+@media (max-width: 767px) {
+  .video__button {
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+  }
+}
+@media (hover: hover) {
+  .video__button:hover:not(.focus-visible) {
+    scale: 1.1;
+  }
+}
+.video__button.focus-visible:focus {
+  scale: 1.1;
+}
+.video__button:active:not(.focus-visible) {
+  scale: 1.1;
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {

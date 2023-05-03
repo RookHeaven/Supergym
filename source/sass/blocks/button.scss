@@ -13,7 +13,7 @@
   background-color: $color-transparent;
   border: 4px solid $color-default-white;
   cursor: pointer;
-  transition: opacity $trans-default;
+  transition: all $trans-default;
 
   &:disabled,
   &--disabled {

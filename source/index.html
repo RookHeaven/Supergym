@@ -11,18 +11,18 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="img/favicons/manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -58,6 +58,36 @@
         </div>
       </div>
       <main>
+        <section class="gym">
+          <div class="gym__wrapper container">
+            <div class="gym__description">
+              <h2>Тренажерный зал</h2>
+              <span>Просторный зал площадью 900&nbsp;кв/м</span>
+              <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="gym__picture">
+                  <picture>
+                    <source type="image/webp" media="(max-width:767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width:1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+                    <img src="img/gym-desktop.jpg" width="660" height="401" alt="Фото тренажёрного зала." srcset="img/gym-desktop@2x.jpg 2x">
+                  </picture>
+            </div>
+            <div class="gym__video video">
+              <picture>
+                <source type="image/webp" media="(max-width:767px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width:1199px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                <img src="img/video-desktop.jpg" width="364" height="228" alt="Фото подложки видео с изображением тренажёрного зала." srcset="img/video-desktop@2x.jpg 2x">
+              </picture>
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+              <button class="video__button" type="button">
+                <img src="img/svg/video-button.svg" alt="Кнопка запуска видео." width="100" height="100">
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
