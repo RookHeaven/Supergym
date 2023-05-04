@@ -1,0 +1,88 @@
+.season-ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 70px 62px;
+  list-style: none;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+
+  @include hover-focus {
+    border-image: $border-gradient;
+    border-image-slice: 1;
+  }
+
+  @include active {
+    border-image: $border-gradient;
+    border-image-slice: 1;
+    opacity: 0.8;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  span {
+    margin-bottom: 65px;
+    color: $color-chambray;
+  }
+
+  &__price {
+    margin-bottom: 33px;
+
+    span:first-child {
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 90px;
+      color: $color-egyptian-blue;
+    }
+
+    span:first-child::before {
+      content: attr(data-price);
+      position: absolute;
+      top: -63px;
+      left: -20px;
+      font-size: 100px;
+      line-height: 150px;
+      color: $color-whisper;
+      opacity: 0.48;
+      z-index: -1;
+    }
+
+    span:last-child {
+      position: relative;
+      z-index: 1;
+      padding-left: 6px;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 90px;
+      color: $color-sapphire;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    min-height: 64px;
+    border: 2px solid $color-sapphire;
+    color: $color-sapphire;
+
+    @include hover-focus {
+      border: none;
+      background: $button-gradient;
+      color: $color-default-white;
+    }
+
+    @include active {
+      border: none;
+      background: $button-gradient;
+      color: $color-default-white;
+      opacity: 0.8;
+    }
+  }
+}

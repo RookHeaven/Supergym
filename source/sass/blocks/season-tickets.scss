@@ -1,0 +1,23 @@
+.season-tickets {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+
+  &__picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+}
