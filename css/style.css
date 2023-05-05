@@ -2308,6 +2308,10 @@ button,
   margin-bottom: 7px;
 }
 
+.gym__picture {
+  background-color: #f8f9fc;
+}
+
 .video {
   position: absolute;
   right: 47%;
@@ -2497,13 +2501,13 @@ button,
 .season-tickets {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 79px;
   background-color: #f8f9fc;
 }
 
 .season-tickets__picture {
   position: absolute;
-  bottom: -110px;
+  bottom: -150px;
   right: 0;
 }
 
@@ -2615,6 +2619,149 @@ button,
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
+  opacity: 0.8;
+}
+
+.promo {
+  padding-top: 120px;
+  padding-bottom: 106px;
+}
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__info {
+  width: 500px;
+  padding: 80px 78px;
+  background-color: #ed0233;
+  color: #ffffff;
+}
+
+.promo__info p {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.promo__info-wrapper {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 51px;
+  -moz-column-gap: 51px;
+  column-gap: 51px;
+}
+
+.promo__info-wrapper h3 {
+  max-width: 201px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 13px;
+  padding-top: 6px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+}
+
+.promo__info-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  row-gap: 9px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  min-width: 92px;
+}
+
+.promo__info-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.promo__info-date span {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.promo__info-date time {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.promo__info-date time::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 4px;
+  left: -2px;
+  background-color: #ffffff;
+}
+
+.promo__info-date small {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  max-width: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promo__picture {
+  width: 660px;
+  height: auto;
+  background-color: #102654;
+}
+
+.promo__picture img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.promo__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+.promo__button.focus-visible:focus {
+  background: #102654;
+}
+
+.promo__button:active:not(.focus-visible) {
+  background: #102654;
   opacity: 0.8;
 }
 
@@ -3187,5 +3334,9 @@ button,
     background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     color: #ffffff;
+  }
+
+  .promo__button:hover:not(.focus-visible) {
+    background: #102654;
   }
 }
