@@ -2802,7 +2802,7 @@ button,
 @media (max-width: 767px) {
   .season-tickets {
     padding-top: 63px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 .season-tickets__picture {
@@ -3020,6 +3020,12 @@ button,
     padding-bottom: 100px;
   }
 }
+@media (max-width: 767px) {
+  .promo {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+}
 .promo__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3032,6 +3038,14 @@ button,
             justify-content: center;
   }
 }
+@media (max-width: 767px) {
+  .promo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .promo__info {
   width: 500px;
   padding: 80px 78px;
@@ -3042,6 +3056,11 @@ button,
   .promo__info {
     width: 292px;
     padding: 47px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__info {
+    width: 100%;
   }
 }
 .promo__info p {
@@ -3069,9 +3088,19 @@ button,
 @media (max-width: 1199px) {
   .promo__info-wrapper {
     margin-bottom: 0;
-    -webkit-column-gap: 34px;
-       -moz-column-gap: 34px;
-            column-gap: 34px;
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__info-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
   }
 }
 .promo__info-wrapper h3 {
@@ -3114,6 +3143,11 @@ button,
 @media (max-width: 1199px) {
   .promo__info-inner {
     row-gap: 0;
+  }
+}
+@media (max-width: 767px) {
+  .promo__info-inner {
+    min-width: unset;
   }
 }
 .promo__info-date {
@@ -3195,6 +3229,11 @@ button,
 @media (max-width: 1199px) {
   .promo__picture {
     width: 386px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__picture {
+    width: 100%;
   }
 }
 .promo__picture img {
