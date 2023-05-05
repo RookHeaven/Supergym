@@ -2982,11 +2982,11 @@ button,
 
   .season-tickets {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 59px;
   }
 
   .season-tickets__picture {
-    bottom: -84px;
+    bottom: -125px;
     right: 0;
   }
 
@@ -3009,6 +3009,79 @@ button,
   .season-ticket h3 {
     line-height: 29px;
     margin-bottom: 10px;
+  }
+
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .promo__info {
+    width: 292px;
+    padding: 47px 45px;
+  }
+
+  .promo__info p {
+    margin-bottom: 29px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__info-wrapper {
+    margin-bottom: 0;
+    -webkit-column-gap: 34px;
+    -moz-column-gap: 34px;
+    column-gap: 34px;
+  }
+
+  .promo__info-wrapper h3 {
+    max-width: 117px;
+    padding-left: 7px;
+    padding-top: 4px;
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .promo__info-inner {
+    row-gap: 0;
+  }
+
+  .promo__info-date span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__info-date time {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo__info-date time::before {
+    top: 0;
+    left: 0;
+  }
+
+  .promo__info-date small {
+    max-width: 26px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .promo__picture {
+    width: 386px;
+  }
+
+  .promo__button {
+    min-height: 39px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid #ffffff;
   }
 }
 
