@@ -92,16 +92,18 @@
         <section class="season-tickets" id="season-tickets">
           <div class="season-tickets__wrapper container">
             <div class="season-tickets__picture">
-              <source type="image/webp" media="(max-width:1199px)" srcset="img/weights-tablet.webp 1x, img/weights-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/weights-desktop.webp 1x, img/weights-desktop@2x.webp 2x">
-              <img src="img/weights-desktop.png" width="287" height="494" alt="Изображение двух красных блинов для штанги." srcset="img/weights-desktop@2x.png 2x">
+              <picture>
+                <source type="image/webp" media="(max-width:1199px)" srcset="img/weights-tablet.webp 1x, img/weights-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/weights-desktop.webp 1x, img/weights-desktop@2x.webp 2x">
+                <img src="img/weights-desktop.png" width="287" height="494" alt="Изображение двух красных блинов для штанги." srcset="img/weights-desktop@2x.png 2x" loading="lazy">
+              </picture>
             </div>
             <h2>Абонементы</h2>
             <div class="season-tickets__tabs tabs" data-tabs="parent">
               <div class="tabs__controls">
-                <button class="tabs__control button is-active" type="button" data-tabs="control" data-index="0">1 месяц</button>
-                <button class="tabs__control button" type="button" data-tabs="control" data-index="1">6 месяцев</button>
-                <button class="tabs__control button" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+                <button class="tabs__control is-active" type="button" data-tabs="control" data-index="0">1 месяц</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-index="2">12 месяцев</button>
               </div>
               <div class="tabs__content" data-tabs="content">
                 <ul class="tabs__element is-active" data-tabs="element">
