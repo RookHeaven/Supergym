@@ -2,8 +2,17 @@
   padding-top: 120px;
   padding-bottom: 106px;
 
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &__wrapper {
     display: flex;
+
+    @include vp-1199 {
+      justify-content: center;
+    }
   }
 
   &__info {
@@ -12,11 +21,22 @@
     background-color: $color-tourch-red;
     color: $color-default-white;
 
+    @include vp-1199 {
+      width: 292px;
+      padding: 47px 45px;
+    }
+
     p {
       margin-top: 0;
       margin-bottom: 45px;
       font-size: 18px;
       line-height: 27px;
+
+      @include vp-1199 {
+        margin-bottom: 29px;
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -24,7 +44,11 @@
     margin-bottom: 10px;
     display: flex;
     column-gap: 51px;
-    // justify-content: space-between;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+      column-gap: 34px;
+    }
 
     h3 {
       max-width: 201px;
@@ -37,6 +61,14 @@
       font-size: 82px;
       line-height: 79px;
       letter-spacing: 0.03em;
+
+      @include vp-1199 {
+        max-width: 117px;
+        padding-left: 7px;
+        padding-top: 4px;
+        font-size: 48px;
+        line-height: 46px;
+      }
     }
   }
 
@@ -45,9 +77,12 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 9px;
-    // margin-bottom: 5px;
     align-self: flex-start;
     min-width: 92px;
+
+    @include vp-1199 {
+      row-gap: 0;
+    }
   }
 
   &__info-date {
@@ -57,6 +92,11 @@
     span {
       font-size: 18px;
       line-height: 27px;
+
+      @include vp-1199 {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
 
     time {
@@ -68,6 +108,11 @@
       line-height: 60px;
       width: fit-content;
 
+      @include vp-1199 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
       &::before {
         position: absolute;
         content: "";
@@ -76,6 +121,11 @@
         top: 4px;
         left: -2px;
         background-color: $color-default-white;
+
+        @include vp-1199 {
+          top: 0;
+          left: 0;
+        }
       }
     }
 
@@ -85,6 +135,12 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
+
+      @include vp-1199 {
+        max-width: 26px;
+        font-size: 10px;
+        line-height: 15px;
+      }
     }
   }
 
@@ -92,6 +148,10 @@
     width: 660px;
     height: auto;
     background-color: $color-sapphire;
+
+    @include vp-1199 {
+      width: 386px;
+    }
 
     img {
       object-fit: cover;
@@ -103,6 +163,13 @@
   &__button {
     width: 100%;
     min-height: 70px;
+
+    @include vp-1199 {
+      min-height: 39px;
+      font-size: 10px;
+      line-height: 12px;
+      border: 2px solid $color-default-white;
+    }
 
     @include hover-focus {
       background: $color-sapphire;

@@ -6,7 +6,7 @@
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 59px;
   }
 
   @include vp-767 {
@@ -20,7 +20,7 @@
     right: 0;
 
     @include vp-1199 {
-      bottom: -84px;
+      bottom: -125px;
       right: 0;
     }
 
