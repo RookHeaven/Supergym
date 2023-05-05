@@ -4,10 +4,36 @@
   padding-bottom: 120px;
   background-color: $color-ghost-white;
 
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+
   &__picture {
     position: absolute;
-    bottom: 0;
+    bottom: -110px;
     right: 0;
+
+    @include vp-1199 {
+      bottom: -84px;
+      right: 0;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+
+    img {
+      @include vp-1199 {
+        width: 347px;
+        height: 444px;
+      }
+    }
   }
 
   h2 {
@@ -19,5 +45,16 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 17px;
+
+    @include vp-1199 {
+      margin-bottom: 21px;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }

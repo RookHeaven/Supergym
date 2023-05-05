@@ -1452,6 +1452,10 @@ button,
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .button:disabled, .button--disabled {
   opacity: 0.5;
@@ -2353,7 +2357,7 @@ button,
 @media (max-width: 1199px) {
   .gym {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 184px;
   }
 }
 @media (max-width: 767px) {
@@ -2465,7 +2469,7 @@ button,
     display: none;
   }
   .gym__description p:not(:last-child) {
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 }
 @media (max-width: 767px) {
@@ -2592,6 +2596,22 @@ button,
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 1199px) {
+  .tabs__controls {
+    -webkit-column-gap: 55px;
+       -moz-column-gap: 55px;
+            column-gap: 55px;
+    margin: 0 auto 44px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__controls {
+    -webkit-column-gap: 45px;
+       -moz-column-gap: 45px;
+            column-gap: 45px;
+    margin: 0 auto 34px;
+  }
+}
 .tabs__controls::after {
   content: "";
   position: absolute;
@@ -2601,6 +2621,16 @@ button,
   height: 2px;
   background-color: #787878;
   opacity: 0.2;
+}
+@media (max-width: 1199px) {
+  .tabs__controls::after {
+    top: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__controls::after {
+    top: 37px;
+  }
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
@@ -2625,23 +2655,43 @@ button,
   font-weight: 400;
   letter-spacing: 0;
   padding: 0 0 11px 0;
+  background-color: transparent;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1199px) {
   .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 13px 0;
   }
 }
 .tabs__control.is-active {
   opacity: 1;
-  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
+  cursor: default;
+}
+
+@media (hover: hover) {
+  .tabs__control:not(.is-active):hover:not(.focus-visible) {
+    border-bottom: 2px solid transparent;
+    color: #102654;
+    opacity: 1;
+  }
+}
+.tabs__control:not(.is-active).focus-visible:focus {
+  border-bottom: 2px solid transparent;
+  color: #102654;
+  opacity: 1;
 }
 
 .tabs__content {
@@ -2661,9 +2711,20 @@ button,
   margin: 0;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 1199px) {
   .tabs__element {
-    padding: 15px;
+    -ms-grid-columns: 442px;
+    grid-template-columns: 442px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__element {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    gap: 35px;
   }
 }
 
@@ -2729,10 +2790,39 @@ button,
   padding-bottom: 120px;
   background-color: #f8f9fc;
 }
+@media (max-width: 1199px) {
+  .season-tickets {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .season-tickets {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
 .season-tickets__picture {
   position: absolute;
-  bottom: 0;
+  bottom: -110px;
   right: 0;
+}
+@media (max-width: 1199px) {
+  .season-tickets__picture {
+    bottom: -84px;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .season-tickets__picture {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .season-tickets__picture img {
+    width: 347px;
+    height: 444px;
+  }
 }
 .season-tickets h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -2743,6 +2833,19 @@ button,
   text-align: center;
   margin-top: 0;
   margin-bottom: 17px;
+}
+@media (max-width: 1199px) {
+  .season-tickets h2 {
+    margin-bottom: 21px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .season-tickets h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .season-ticket {
@@ -2756,10 +2859,22 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 56px 70px 62px;
+  padding: 51px 70px 62px;
   list-style: none;
   background-color: #ffffff;
   border: 7px solid transparent;
+}
+@media (max-width: 1199px) {
+  .season-ticket {
+    padding: 55px 110px;
+    min-height: 448px;
+  }
+}
+@media (max-width: 767px) {
+  .season-ticket {
+    padding: 44px 34px;
+    min-height: 384px;
+  }
 }
 @media (hover: hover) {
   .season-ticket:hover:not(.focus-visible) {
@@ -2781,17 +2896,40 @@ button,
 }
 .season-ticket h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 26px;
-  line-height: 29px;
+  line-height: 40px;
+}
+@media (max-width: 1199px) {
+  .season-ticket h3 {
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .season-ticket h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 .season-ticket span {
   margin-bottom: 65px;
   color: #495a7d;
 }
+@media (max-width: 767px) {
+  .season-ticket span {
+    margin-bottom: 54px;
+  }
+}
 .season-ticket__price {
   margin-bottom: 33px;
+}
+@media (max-width: 767px) {
+  .season-ticket__price {
+    margin-bottom: 30px;
+    padding-left: 8px;
+  }
 }
 .season-ticket__price span:first-child {
   position: relative;
@@ -2800,6 +2938,12 @@ button,
   font-size: 60px;
   line-height: 90px;
   color: #103aae;
+}
+@media (max-width: 767px) {
+  .season-ticket__price span:first-child {
+    font-size: 48px;
+    line-height: 72px;
+  }
 }
 .season-ticket__price span:first-child::before {
   content: attr(data-price);
@@ -2812,6 +2956,14 @@ button,
   opacity: 0.48;
   z-index: -1;
 }
+@media (max-width: 767px) {
+  .season-ticket__price span:first-child::before {
+    top: -52px;
+    left: -11px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
 .season-ticket__price span:last-child {
   position: relative;
   z-index: 1;
@@ -2820,6 +2972,12 @@ button,
   font-size: 55px;
   line-height: 90px;
   color: #102654;
+}
+@media (max-width: 767px) {
+  .season-ticket__price span:last-child {
+    font-size: 46px;
+    line-height: 72px;
+  }
 }
 .season-ticket__button {
   width: 100%;
