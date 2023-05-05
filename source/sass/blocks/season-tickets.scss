@@ -1,7 +1,7 @@
 .season-tickets {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 79px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -16,7 +16,7 @@
 
   &__picture {
     position: absolute;
-    bottom: -110px;
+    bottom: -150px;
     right: 0;
 
     @include vp-1199 {
