@@ -3035,9 +3035,9 @@ button,
 
   .promo__info-wrapper {
     margin-bottom: 0;
-    -webkit-column-gap: 34px;
-    -moz-column-gap: 34px;
-    column-gap: 34px;
+    -webkit-column-gap: 33px;
+    -moz-column-gap: 33px;
+    column-gap: 33px;
   }
 
   .promo__info-wrapper h3 {
@@ -3250,7 +3250,7 @@ button,
 
   .season-tickets {
     padding-top: 63px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 
   .season-tickets__picture {
@@ -3296,6 +3296,39 @@ button,
   .season-ticket__price span:last-child {
     font-size: 46px;
     line-height: 72px;
+  }
+
+  .promo {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .promo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promo__info {
+    width: 100%;
+  }
+
+  .promo__info-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-column-gap: 33px;
+    -moz-column-gap: 33px;
+    column-gap: 33px;
+  }
+
+  .promo__info-inner {
+    min-width: unset;
+  }
+
+  .promo__picture {
+    width: 100%;
   }
 }
 
