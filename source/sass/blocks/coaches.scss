@@ -1,16 +1,27 @@
 .coaches {
   padding-bottom: 140px;
 
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
   &__container {
     position: relative;
   }
 
   h2 {
     margin-top: 0;
+    margin-bottom: 48px;
     font-family: $ff-alumni-sans;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+    }
   }
 
   &__button {
@@ -19,7 +30,6 @@
     top: 243px;
     width: 18px;
     height: 34px;
-    background-image: url("../img/svg/icon-arrow.svg");
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,15 +38,24 @@
     transition: opacity $trans-default;
     cursor: pointer;
 
+    @include hover {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
     &--prev {
       background-image: url("../img/svg/icon-arrow.svg");
       transform: rotate(180deg);
-      left: 3px;
+      left: -17px;
     }
 
     &--next {
       background-image: url("../img/svg/icon-arrow.svg");
-      right: 3px;
+      right: -17px;
     }
   }
 
@@ -57,6 +76,11 @@
     padding: 51px 20px 52px;
     color: $color-default-white;
     background-color: $color-sapphire-89;
+    cursor: pointer;
+
+    @include vp-1199 {
+      width: 268px;
+    }
 
     &:hover,
     &:focus {
@@ -81,7 +105,7 @@
       width: 160px;
       margin: 0;
       transform: translateX(-50%);
-      font-size: 18;
+      font-size: 18px;
       line-height: 27px;
       text-align: center;
     }
@@ -92,14 +116,23 @@
       bottom: 0;
       left: 0;
       right: 0;
-      width: 100%;
+      // width: 100%;
       height: 100%;
       object-fit: cover;
+      width: 100vw;
+
+      @include vp-1199 {
+        min-width: 268px;
+        min-height: 294px;
+        height: auto;
+      }
     }
   }
 
   &__info {
     display: none;
+    width: 100%;
+    height: 100%;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: $color-default-white rgba($color: $color-default-white, $alpha: 0.2);
@@ -119,6 +152,7 @@
 
     p {
       margin-top: 0;
+      margin-bottom: 0;
       font-weight: 700;
       font-size: 18px;
       line-height: 27px;
@@ -127,6 +161,7 @@
 
     span {
       display: block;
+      margin-bottom: 30px;
       color: $color-spindle;
       text-align: center;
     }
