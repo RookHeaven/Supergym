@@ -7,6 +7,17 @@
 
   &__container {
     position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    @include vp-1199 {
+      padding: 0 101px;
+    }
+
+    @include vp-767 {
+      padding: 0 47px;
+    }
   }
 
   h2 {
@@ -19,8 +30,16 @@
     letter-spacing: 0.03em;
 
     @include vp-1199 {
+      margin-bottom: 33px;
       font-size: 42px;
       line-height: 50px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      margin-bottom: 43px;
+      font-size: 32px;
+      line-height: 38px;
     }
   }
 
@@ -38,8 +57,17 @@
     transition: opacity $trans-default;
     cursor: pointer;
 
-    @include hover {
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
+
+    @include hover-focus {
       opacity: 0.6;
+    }
+
+    @include active {
+      opacity: 0.8;
     }
 
     &:disabled {
@@ -50,12 +78,36 @@
     &--prev {
       background-image: url("../img/svg/icon-arrow.svg");
       transform: rotate(180deg);
-      left: -17px;
+      left: 3px;
+
+      @include vp-1199 {
+        left: 43px;
+        top: 52%;
+        transform:
+          rotate(180deg)
+          translateY(-50%);
+      }
+
+      @include vp-767 {
+        top: 56%;
+        left: 14px;
+      }
     }
 
     &--next {
       background-image: url("../img/svg/icon-arrow.svg");
-      right: -17px;
+      right: 3px;
+
+      @include vp-1199 {
+        right: 43px;
+        top: 61%;
+        transform: translateY(-50%);
+      }
+
+      @include vp-767 {
+        right: 14px;
+        top: 61%;
+      }
     }
   }
 
@@ -72,29 +124,51 @@
   &__swiper-slide {
     position: relative;
     width: 260px;
-    height: 294px;
-    padding: 51px 20px 52px;
     color: $color-default-white;
-    background-color: $color-sapphire-89;
     cursor: pointer;
-
-    @include vp-1199 {
-      width: 268px;
-    }
 
     &:hover,
     &:focus {
-      h3 {
-        display: none;
-      }
+      .coaches__photo {
+        h3 {
+          display: none;
+        }
 
-      img {
-        z-index: -1;
+        img {
+          z-index: -1;
+        }
       }
 
       .coaches__info {
         display: block;
       }
+    }
+
+    @include vp-1199 {
+      &:active {
+        .coaches__photo {
+          h3 {
+            display: none;
+          }
+
+          img {
+            z-index: -1;
+          }
+        }
+
+        .coaches__info {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    position: relative;
+
+    @include vp-1199 {
+      width: 100%;
+      height: auto;
     }
 
     h3 {
@@ -108,37 +182,58 @@
       font-size: 18px;
       line-height: 27px;
       text-align: center;
+
+      @include vp-1199 {
+        transform: translateX(-47%);
+      }
     }
 
     img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      // width: 100%;
-      height: 100%;
+      position: relative;
+      width: 100%;
+      height: auto;
       object-fit: cover;
-      width: 100vw;
 
       @include vp-1199 {
         min-width: 268px;
         min-height: 294px;
         height: auto;
       }
+
+      @media (width: $vp-768) {
+        height: 294px;
+      }
+
+      @include vp-767 {
+        min-width: 226px;
+        min-height: 274px;
+      }
+
+      @media (width: $vp-320) {
+        height: 274px;
+      }
     }
   }
 
   &__info {
+    position: absolute;
+    z-index: 2;
+    top: 0;
     display: none;
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    padding: 51px 20px 39px;
+    background-color: $color-sapphire-89;
+    overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: $color-default-white rgba($color: $color-default-white, $alpha: 0.2);
 
+    @include vp-767 {
+      padding: 42px 25px 28px;
+    }
+
     &::-webkit-scrollbar {
-      width: 2px;
+      width: 4px;
     }
 
     &::-webkit-scrollbar-track {
@@ -148,6 +243,7 @@
     &::-webkit-scrollbar-thumb {
       background-color: $color-default-white;
       border-radius: 20px;
+      border: 3px solid $color-crimson;
     }
 
     p {
@@ -170,6 +266,10 @@
       margin: 0;
       padding-left: 51px;
       list-style: none;
+
+      @include vp-767 {
+        padding-left: 25px;
+      }
     }
 
     li {

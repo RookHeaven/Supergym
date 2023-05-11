@@ -9,7 +9,7 @@
 
   @include vp-767 {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 63px;
   }
 
   &__wrapper {
@@ -32,7 +32,7 @@
 
     @include vp-1199 {
       width: 292px;
-      padding: 47px 45px;
+      padding: 47px 45px 51px;
     }
 
     @include vp-767 {
