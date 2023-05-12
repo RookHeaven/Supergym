@@ -19,6 +19,7 @@ $color-dark-cerulean:               #003d85;
 $color-tourch-red:                  #ed0233;
 $color-cobalt:                      #003eb7;
 $color-crimson:                     #d10a42;
+$color-crimson-20:                  rgba(209, 10, 66, 0.2);
 $color-cobalt-number:               #0041ca;
 $color-smalt:                       #00359f;
 $color-egyptian-blue:               #103aae;
@@ -29,6 +30,7 @@ $color-ghost-white:                 #f8f9fc;
 $color-light-slate-grey:            #74819c;
 $color-grey:                        #787878;
 $color-spindle:                     #b6bdcc;
+$color-persian-blue:                #2e35ac;
 
 // Gradient
 
@@ -45,6 +47,8 @@ $hero-gradient-mobile:              conic-gradient(from 167.26deg at 35.31% 34.2
 $button-gradient:                   linear-gradient(97.05deg, $color-tourch-red 17.6%, $color-cobalt 95.31%);
 
 $number-gradient:                   linear-gradient(142.51deg, $color-crimson 0%, $color-cobalt-number 87.33%);
+
+$number-gradient-first-item:        linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt-number 45.58%);
 
 $border-gradient:                   linear-gradient(142.51deg, $color-crimson 0%, $color-smalt 87.33%);
 
