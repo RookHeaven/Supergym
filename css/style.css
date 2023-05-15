@@ -3311,6 +3311,117 @@ button,
   opacity: 0.8;
 }
 
+.reviews {
+  padding-bottom: 121px;
+}
+
+.reviews h2 {
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.reviews__container {
+  position: relative;
+  max-width: 672px;
+  padding: 0 56px;
+}
+
+.reviews__button {
+  position: absolute;
+  display: block;
+  top: 207px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.reviews__button.focus-visible:focus {
+  opacity: 0.6;
+}
+
+.reviews__button:active:not(.focus-visible) {
+  opacity: 0.8;
+}
+
+.reviews__button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.reviews__button--prev {
+  background-image: url("../img/svg/icon-arrow.svg");
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.reviews__button--next {
+  background-image: url("../img/svg/icon-arrow.svg");
+  right: 0;
+}
+
+.reviews__swiper {
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.reviews__swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
+  padding: 62px 62px 42px 62px;
+  width: 560px;
+  height: auto;
+  color: #ffffff;
+  background-color: #1c3374;
+  cursor: pointer;
+}
+
+.reviews__info {
+  max-width: 328px;
+}
+
+.reviews__info h3 {
+  margin-top: -8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.reviews__info p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+
+.reviews__info p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3785,7 +3896,7 @@ button,
 
   .stocks {
     padding-top: 92px;
-    padding-bottom: 100px;
+    padding-bottom: 92px;
   }
 
   .stocks h2 {
@@ -3825,6 +3936,38 @@ button,
 
   .stocks__item br {
     display: block;
+  }
+
+  .reviews {
+    padding-bottom: 100px;
+  }
+
+  .reviews h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .reviews__container {
+    max-width: 678px;
+  }
+
+  .reviews__button--prev {
+    top: 54%;
+    -webkit-transform: rotate(180deg) translateY(-50%);
+    -ms-transform: rotate(180deg) translateY(-50%);
+    transform: rotate(180deg) translateY(-50%);
+  }
+
+  .reviews__button--next {
+    top: 64%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .reviews__swiper-slide {
+    padding: 62px 65px 58px 65px;
   }
 }
 
@@ -4208,7 +4351,7 @@ button,
 
   .stocks {
     padding-top: 63px;
-    padding-bottom: 70px;
+    padding-bottom: 63px;
   }
 
   .stocks h2 {
@@ -4263,6 +4406,70 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+  }
+
+  .reviews {
+    padding-bottom: 70px;
+  }
+
+  .reviews h2 {
+    margin-bottom: 43px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .reviews__container {
+    padding: 0 47px;
+    min-width: 290px;
+    max-width: unset;
+  }
+
+  .reviews__button {
+    width: 10px;
+    height: 19px;
+  }
+
+  .reviews__button--prev {
+    top: 55%;
+    left: 15px;
+  }
+
+  .reviews__button--next {
+    right: 15px;
+    top: 60%;
+  }
+
+  .reviews__swiper-slide {
+    -webkit-column-gap: unset;
+    -moz-column-gap: unset;
+    column-gap: unset;
+    padding: 40px 25px 15px 25px;
+  }
+
+  .reviews__photo {
+    position: absolute;
+    top: 40px;
+    left: 41px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews__info {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .reviews__info h3 {
+    width: 100px;
+    line-height: 26px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    padding-left: 100px;
+  }
+
+  .reviews__info p {
+    text-align: center;
+    width: auto;
   }
 }
 
@@ -4387,6 +4594,10 @@ button,
   .stocks__button:hover:not(.focus-visible) {
     background: none;
     scale: 1.2;
+  }
+
+  .reviews__button:hover:not(.focus-visible) {
+    opacity: 0.6;
   }
 }
 
