@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import './modules/video/index';
 import './modules/tabs/index';
 import './modules/slider/index';
+import './modules/carousel/index';
 
 // ---------------------------------
 
