@@ -2101,7 +2101,14 @@ button,
 }
 
 .season-ticket__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 33px;
+}
+
+.season-ticket__price span {
+  margin: 0;
 }
 
 .season-ticket__price span:first-child {
@@ -2116,7 +2123,7 @@ button,
 .season-ticket__price span:first-child::before {
   content: attr(data-price);
   position: absolute;
-  top: -63px;
+  top: -54px;
   left: -20px;
   font-size: 100px;
   line-height: 150px;
@@ -2137,7 +2144,7 @@ button,
 
 .season-ticket__button {
   width: 100%;
-  min-height: 64px;
+  min-height: 66px;
   border: 2px solid #102654;
   color: #102654;
 }
@@ -4085,8 +4092,8 @@ button,
   }
 
   .season-ticket__price span:first-child::before {
-    top: -52px;
-    left: -11px;
+    top: -45px;
+    left: -19px;
     font-size: 80px;
     line-height: 120px;
   }
