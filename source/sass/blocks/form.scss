@@ -1,0 +1,89 @@
+.form {
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      margin-bottom: 33px;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 35px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 46%;
+    margin-bottom: 30px;
+
+    @include vp-1199 {
+      width: 44%;
+    }
+
+    @include vp-767 {
+      margin-bottom: 34px;
+      width: 100%;
+    }
+
+    @include hover {
+      input {
+        color: $color-light-slate-grey;
+        background-color: $color-default-white;
+      }
+    }
+
+    @include focus {
+      input {
+        color: $color-light-slate-grey;
+        background-color: $color-default-white;
+      }
+    }
+
+    input {
+      color: inherit;
+      width: 100%;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      background-color: $color-sapphire;
+      border: 0;
+      border-bottom: 1px solid $color-light-slate-grey;
+
+      &::placeholder {
+        color: inherit;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 52px;
+    width: 100%;
+    align-self: flex-start;
+    justify-content: center;
+    border: 3px solid $color-default-white;
+
+    @include vp-767 {
+      margin-top: 6px;
+      width: 100%;
+    }
+  }
+}

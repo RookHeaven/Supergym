@@ -527,6 +527,52 @@
             <button class="reviews__button reviews__button--next" type="button"></button>
           </div>
         </section>
+
+        <section class="contacts">
+          <div class="contacts__form">
+            <div class="contacts__form-container container">
+              <div class="contacts__form-wrapper" data-form-validate data-callback="base">
+                <form class="contacts-form-form form" action="https://echo.htmlacademy.ru/" method="post">
+                  <h2>Бесплатное занятие</h2>
+                  <div class="form__wrapper">
+                    <div class="form__input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                      <label class="visually-hidden" for="customer-name">Введите ваше имя</label>
+                      <input type="text" name="name" id="customer-name" placeholder="Имя">
+                    </div>
+                    <div class="form__input custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+                      <label class="visually-hidden" for="customer-phone">Укажите ваш телефон</label>
+                      <input type="text" name="name" id="customer-phone" placeholder="Телефон">
+                    </div>
+                    <button class="form__button button" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__info">
+            <div class="contacts__info-container container">
+              <h2>Контакты</h2>
+              <ul class="contacts__info-list">
+                <li class="contacts__info-item contacts__info-item--address">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                </li>
+                <li class="contacts__info-item contacts__info-item--phone">
+                  <h3>Телефон:</h3>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__info-item contacts__info-item--schedule">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                </li>
+                <li class="contacts__info-item contacts__info-item--email">
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
