@@ -2872,6 +2872,7 @@ button,
   position: relative;
   max-width: 672px;
   padding: 0 56px;
+  margin: 0 auto;
 }
 
 .reviews__button {
@@ -4452,6 +4453,7 @@ button,
   }
 
   .footer__wrapper {
+    padding-top: 45px;
     padding-bottom: 52px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
