@@ -56,11 +56,16 @@
   }
 
   &__price {
+    display: flex;
     margin-bottom: 33px;
 
     @include vp-767 {
       margin-bottom: 30px;
       padding-left: 8px;
+    }
+
+    span {
+      margin: 0;
     }
 
     span:first-child {
@@ -80,7 +85,7 @@
     span:first-child::before {
       content: attr(data-price);
       position: absolute;
-      top: -63px;
+      top: -54px;
       left: -20px;
       font-size: 100px;
       line-height: 150px;
@@ -89,8 +94,8 @@
       z-index: -1;
 
       @include vp-767 {
-        top: -52px;
-        left: -11px;
+        top: -45px;
+        left: -19px;
         font-size: 80px;
         line-height: 120px;
       }
@@ -114,7 +119,7 @@
 
   &__button {
     width: 100%;
-    min-height: 64px;
+    min-height: 66px;
     border: 2px solid $color-sapphire;
     color: $color-sapphire;
 
