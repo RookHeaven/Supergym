@@ -3771,6 +3771,7 @@ button,
   position: relative;
   max-width: 672px;
   padding: 0 56px;
+  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .reviews__container {
@@ -4291,6 +4292,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer__wrapper {
+    padding-top: 45px;
     padding-bottom: 52px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4441,20 +4443,21 @@ button,
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  border-radius: 50%;
 }
 @media (hover: hover) {
   .footer__contacts a:hover:not(.focus-visible) {
-    color: #030a1a;
-    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 12px #ffffff;
+            box-shadow: 0 0 12px #ffffff;
   }
 }
 .footer__contacts a.focus-visible:focus {
-  color: #030a1a;
-  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 12px #ffffff;
+          box-shadow: 0 0 12px #ffffff;
 }
 .footer__contacts a:active:not(.focus-visible) {
-  color: #030a1a;
-  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 12px #ffffff;
+          box-shadow: 0 0 12px #ffffff;
   opacity: 0.8;
 }
 

@@ -36,6 +36,7 @@
     position: relative;
     max-width: 672px;
     padding: 0 56px;
+    margin: 0 auto;
 
     @include vp-1199 {
       max-width: 678px;
