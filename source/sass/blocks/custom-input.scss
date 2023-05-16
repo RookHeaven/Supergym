@@ -41,11 +41,10 @@
 
   .input-message {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -21px;
     font-size: 13px;
-    width: 100%;
-    text-align: right;
+    width: 130%;
 
     &.is-invalid {
       color: #ff0000;
