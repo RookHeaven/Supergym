@@ -3725,7 +3725,7 @@ button,
 }
 
 .reviews {
-  padding-bottom: 136px;
+  padding-bottom: 120px;
 }
 @media (max-width: 1199px) {
   .reviews {
@@ -3870,7 +3870,7 @@ button,
   -webkit-column-gap: 28px;
      -moz-column-gap: 28px;
           column-gap: 28px;
-  padding: 62px 62px 42px 62px;
+  padding: 62px 62px 58px;
   width: 560px;
   height: auto;
   color: #ffffff;
@@ -4022,7 +4022,7 @@ button,
   .contacts__info-container {
     margin: 0;
     max-width: unset;
-    padding: 61px 175px 65px 133px;
+    padding: 61px 175px 62px 133px;
   }
 }
 @media (max-width: 767px) {
@@ -4257,6 +4257,199 @@ button,
     margin-top: 6px;
     width: 100%;
   }
+}
+
+.footer {
+  background-color: #030a1a;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 41px;
+  padding-bottom: 40px;
+  padding-right: 41px;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-right: 39px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding-bottom: 52px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.footer__logo {
+  margin-top: 10px;
+  cursor: default;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .footer__logo img {
+    width: 82px;
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo img {
+    position: absolute;
+    margin-top: 4px;
+    width: 68px;
+    height: 15px;
+  }
+}
+.footer__nav {
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    margin-left: 0;
+  }
+}
+.footer__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 750px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1199px) {
+  .footer__nav ul {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    max-width: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav ul {
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    gap: 76px;
+    margin-bottom: 17px;
+  }
+}
+.footer__nav li {
+  list-style: none;
+}
+@media (max-width: 767px) {
+  .footer__nav li {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav li:first-child {
+    margin-top: 39px;
+    margin-bottom: 16px;
+  }
+}
+.footer__nav a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media (max-width: 767px) {
+  .footer__nav a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (hover: hover) {
+  .footer__nav a:hover:not(.focus-visible) {
+    opacity: 0.5;
+  }
+}
+.footer__nav a.focus-visible:focus {
+  opacity: 0.5;
+}
+.footer__nav a:active:not(.focus-visible) {
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .footer__contacts {
+    margin: 0;
+  }
+}
+.footer__contacts ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .footer__contacts ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.footer__contacts li {
+  list-style: none;
+}
+.footer__contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__contacts a:hover:not(.focus-visible) {
+    color: #030a1a;
+    background-color: #ffffff;
+  }
+}
+.footer__contacts a.focus-visible:focus {
+  color: #030a1a;
+  background-color: #ffffff;
+}
+.footer__contacts a:active:not(.focus-visible) {
+  color: #030a1a;
+  background-color: #ffffff;
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {

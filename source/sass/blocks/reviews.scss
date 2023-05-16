@@ -1,5 +1,5 @@
 .reviews {
-  padding-bottom: 136px;
+  padding-bottom: 120px;
 
   @include vp-1199 {
     padding-bottom: 100px;
@@ -127,7 +127,7 @@
   &__swiper-slide {
     display: flex;
     column-gap: 28px;
-    padding: 62px 62px 42px 62px;
+    padding: 62px 62px 58px;
     width: 560px;
     height: auto;
     color: $color-default-white;

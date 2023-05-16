@@ -1,0 +1,153 @@
+.footer {
+  background-color: $color-black-russian;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    padding-bottom: 40px;
+    padding-right: 41px;
+
+    @include vp-1199 {
+      padding-top: 45px;
+      padding-bottom: 40px;
+      padding-right: 39px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 52px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    margin-top: 10px;
+    cursor: default;
+
+    @include vp-1199 {
+      margin-top: 0;
+    }
+
+    img {
+      @include vp-1199 {
+        width: 82px;
+        height: 18px;
+      }
+
+      @include vp-767 {
+        position: absolute;
+        margin-top: 4px;
+        width: 68px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__nav {
+    margin-left: 10px;
+
+    @include vp-767 {
+      margin-left: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 750px;
+      column-gap: 40px;
+      row-gap: 15px;
+      margin: 0;
+      padding: 0;
+
+      @include vp-1199 {
+        column-gap: 30px;
+        max-width: 450px;
+      }
+
+      @include vp-767 {
+        display: block;
+        column-count: 2;
+        gap: 76px;
+        margin-bottom: 17px;
+      }
+    }
+
+    li {
+      list-style: none;
+
+      @include vp-767 {
+        margin-bottom: 16px;
+      }
+    }
+
+    li:first-child {
+      @include vp-767 {
+        margin-top: 39px;
+        margin-bottom: 16px;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-default-white;
+      transition: $trans-default;
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      @include hover-focus {
+        opacity: 0.5;
+      }
+
+      @include active {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__contacts {
+    @include vp-767 {
+      margin: 0;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 11px;
+      margin: 0;
+      padding: 0;
+
+      @include vp-767 {
+        width: fit-content;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-default-white;
+      transition: $trans-default;
+
+      @include hover-focus {
+        color: $color-black-russian;
+        background-color: $color-default-white;
+      }
+
+      @include active {
+        color: $color-black-russian;
+        background-color: $color-default-white;
+        opacity: 0.8;
+      }
+    }
+  }
+}
