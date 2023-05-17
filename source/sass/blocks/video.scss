@@ -5,6 +5,7 @@
   transform: translateX(50%);
   width: 364px;
   height: 228px;
+  background-color: $color-default-black;
 
   @include vp-1199 {
     right: 50%;
@@ -15,11 +16,14 @@
 
   @include vp-767 {
     position: relative;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
+    bottom: unset;
+    right: unset;
+    top: unset;
+    transform: unset;
     width: 100%;
-    height: auto;
+    height: calc(167 / 320 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
@@ -28,13 +32,17 @@
     }
   }
 
+  picture {
+    position: relative;
+    z-index: 1;
+  }
+
   &__iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
     border: none;
   }
 
@@ -47,6 +55,7 @@
     border: none;
     padding: 0;
     transition: all $trans-default;
+    z-index: 1;
 
     @include vp-1199 {
       width: 73px;
