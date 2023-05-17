@@ -2456,6 +2456,11 @@ button,
 .season-ticket__price span {
   margin: 0;
 }
+@media (max-width: 767px) {
+  .season-ticket__price span {
+    margin: 0;
+  }
+}
 .season-ticket__price span:first-child {
   position: relative;
   z-index: 1;
