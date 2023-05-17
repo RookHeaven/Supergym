@@ -3791,7 +3791,7 @@ button,
     transform: translateY(-50%);
   }
 
-  .reviews__swiper-wrapper {
+  .reviews__swiper {
     width: 566px;
   }
 
@@ -4363,7 +4363,7 @@ button,
     top: 60%;
   }
 
-  .reviews__swiper-wrapper {
+  .reviews__swiper {
     width: unset;
   }
 
