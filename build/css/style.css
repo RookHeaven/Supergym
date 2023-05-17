@@ -3891,6 +3891,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-slide {
+    width: 566px;
     padding: 62px 65px 58px 65px;
   }
 }

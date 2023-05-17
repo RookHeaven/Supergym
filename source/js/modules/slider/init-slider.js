@@ -42,17 +42,13 @@ const getSlider = () => {
     const reviewsSlider = new Swiper(reviewsSwiper, {
       direction: 'horizontal',
       loop: false,
-      slidesPerView: 1,
       speed: 1000,
       breakpoints: {
         320: {
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 1,
-        },
-        1200: {
-          slidesPerView: 1,
+          slidesPerView: 'auto',
         },
       },
 
