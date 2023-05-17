@@ -4028,13 +4028,16 @@ button,
 
   .video {
     position: relative;
-    bottom: 0;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
+    bottom: unset;
+    right: unset;
+    top: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
     width: 100%;
-    height: auto;
+    height: 52.1875vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .video img {
