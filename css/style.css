@@ -4088,6 +4088,10 @@ button,
     padding-left: 8px;
   }
 
+  .season-ticket__price span {
+    margin: 0;
+  }
+
   .season-ticket__price span:first-child {
     font-size: 48px;
     line-height: 72px;
