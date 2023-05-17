@@ -81,7 +81,7 @@
                 <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
                 <img src="img/video-desktop.jpg" width="364" height="228" alt="Фото подложки видео с изображением тренажёрного зала." srcset="img/video-desktop@2x.jpg 2x">
               </picture>
-              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+              <!-- <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe> -->
               <a class="video__button" type="button">
                 <img src="img/svg/video-button.svg" alt="Кнопка запуска видео." width="100" height="100">
               </a>
@@ -229,7 +229,7 @@
           </div>
         </section>
 
-        <section class="coaches">
+        <section class="coaches" id="coaches">
           <div class="coaches__container container">
             <h2>Тренеры</h2>
             <button class="coaches__button coaches__button--prev" type="button"></button>
@@ -440,7 +440,7 @@
           </div>
         </section>
 
-        <section class="stocks">
+        <section class="stocks" id="stocks">
           <div class="stocks__container container">
             <h2>Акции</h2>
             <div class="stocks__wrapper">
@@ -585,13 +585,13 @@
                 <a href="#">Услуги</a>
               </li>
               <li>
-                <a href="#">Абонементы</a>
+                <a href="#season-tickets">Абонементы</a>
               </li>
               <li>
-                <a href="#">Акции</a>
+                <a href="#stocks">Акции</a>
               </li>
               <li>
-                <a href="#">Тренеры</a>
+                <a href="#coaches">Тренеры</a>
               </li>
               <li>
                 <a href="#">Расписание</a>
