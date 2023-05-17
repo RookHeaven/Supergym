@@ -43,6 +43,7 @@
       line-height: 31px;
       letter-spacing: 0.03em;
       color: $color-default-white;
+      max-width: 190px;
 
       @include vp-1199 {
         font-size: 24px;

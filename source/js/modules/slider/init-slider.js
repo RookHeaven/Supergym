@@ -47,9 +47,6 @@ const getSlider = () => {
         320: {
           slidesPerView: 1,
         },
-        768: {
-          slidesPerView: 'auto',
-        },
       },
 
       navigation: {

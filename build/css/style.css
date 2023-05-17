@@ -1581,6 +1581,7 @@ button,
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  max-width: 190px;
 }
 @media (max-width: 1199px) {
   .header__wrapper a {
@@ -1709,6 +1710,7 @@ button,
   -ms-grid-row-align: start;
   -ms-grid-column-align: end;
   place-self: start end;
+  max-width: 200px;
   padding: 0 50px 0 0;
   margin: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -1719,6 +1721,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__description p {
+    max-width: 150px;
     padding-right: 5px;
     font-size: 34px;
     line-height: 41px;
@@ -3869,6 +3872,16 @@ button,
 .reviews__swiper {
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
           box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+@media (max-width: 1199px) {
+  .reviews__swiper {
+    width: 566px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__swiper {
+    width: unset;
+  }
 }
 .reviews__swiper-wrapper {
   margin: 0;

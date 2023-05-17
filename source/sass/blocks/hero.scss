@@ -44,6 +44,7 @@
       grid-column: 2/3;
       grid-row: 1/2;
       place-self: start end;
+      max-width: 200px;
       padding: 0 50px 0 0;
       margin: 0;
       font-family: $ff-alumni-sans;
@@ -53,6 +54,7 @@
       letter-spacing: 0.03em;
 
       @include vp-1199 {
+        max-width: 150px;
         padding-right: 5px;
         font-size: 34px;
         line-height: 41px;
