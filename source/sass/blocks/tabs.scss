@@ -1,5 +1,26 @@
 .tabs {
   max-width: 100%;
+  overflow: hidden;
+
+  &.no-transition {
+    > .tabs__control,
+    > .tabs__content,
+    > .tabs__element {
+      transition: none;
+    }
+  }
+
+  &.no-transition-global {
+    .tabs__control,
+    .tabs__content,
+    .tabs__element {
+      transition: none;
+    }
+  }
+}
+
+.tabs .tabs__content {
+  position: relative;
 }
 
 .tabs__controls {
@@ -100,6 +121,10 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 
   @include vp-1199 {
     grid-template-columns: 442px;
@@ -110,6 +135,19 @@
     grid-template-columns: 100%;
     gap: 35px;
   }
+}
+
+.tabs__element.for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  transition: none;
+}
+
+.tabs__element.is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .tabs--unset .tabs__content {

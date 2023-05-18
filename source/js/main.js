@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import './modules/video/index';
-import './modules/tabs/index';
-import './modules/slider/index';
+import {onPlayClick} from './modules/video/init-video';
+import {initTabs} from './modules/tabs/init-tabs';
+import {getSlider} from './modules/slider/init-slider';
 
 // ---------------------------------
 
@@ -22,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    onPlayClick();
+    initTabs();
+    getSlider();
   });
 });
 

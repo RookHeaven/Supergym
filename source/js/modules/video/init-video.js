@@ -5,7 +5,7 @@ const videoBtn = document.querySelector('.video__button');
 const onPlayClick = () => {
   const video = document.createElement('iframe');
 
-  video.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
+  video.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw');
   video.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
   video.setAttribute('allowfullscreen', '');
   video.classList.add('video__iframe');

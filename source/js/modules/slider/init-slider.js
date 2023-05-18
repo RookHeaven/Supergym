@@ -7,9 +7,11 @@ const reviewsButtonPrev = document.querySelector('.reviews__button--prev');
 const reviewsButtonNext = document.querySelector('.reviews__button--next');
 
 const getSlider = () => {
+  let coachesSlider;
+  let reviewsSlider;
+
   if (coachesSwiper) {
-    // eslint-disable-next-line
-    const coachesSlider = new Swiper(coachesSwiper, {
+    coachesSlider = new Swiper(coachesSwiper, {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
@@ -38,8 +40,7 @@ const getSlider = () => {
   }
 
   if (reviewsSwiper) {
-    // eslint-disable-next-line
-    const reviewsSlider = new Swiper(reviewsSwiper, {
+    reviewsSlider = new Swiper(reviewsSwiper, {
       direction: 'horizontal',
       loop: false,
       speed: 1000,
@@ -55,6 +56,8 @@ const getSlider = () => {
       },
     });
   }
+
+  return {coachesSlider, reviewsSlider};
 };
 
 export {getSlider};

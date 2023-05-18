@@ -2108,6 +2108,25 @@ button,
 
 .tabs {
   max-width: 100%;
+  overflow: hidden;
+}
+.tabs.no-transition > .tabs__control,
+.tabs.no-transition > .tabs__content,
+.tabs.no-transition > .tabs__element {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.tabs.no-transition-global .tabs__control,
+.tabs.no-transition-global .tabs__content,
+.tabs.no-transition-global .tabs__element {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.tabs .tabs__content {
+  position: relative;
 }
 
 .tabs__controls {
@@ -2240,6 +2259,12 @@ button,
   padding: 0;
   margin: 0;
   width: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 @media (max-width: 1199px) {
   .tabs__element {
@@ -2258,48 +2283,7 @@ button,
   }
 }
 
-.tabs--unset .tabs__content {
-  height: 100px;
-}
-
-.tabs--unset .tabs__element {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-[data-tabs=parent] {
-  overflow: hidden;
-}
-[data-tabs=parent].no-transition > [data-tabs=control],
-[data-tabs=parent].no-transition > [data-tabs=content],
-[data-tabs=parent].no-transition > [data-tabs=element] {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-[data-tabs=parent].no-transition-global [data-tabs=control],
-[data-tabs=parent].no-transition-global [data-tabs=content],
-[data-tabs=parent].no-transition-global [data-tabs=element] {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-[data-tabs=parent] [data-tabs=content] {
-  position: relative;
-}
-
-[data-tabs=element] {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-}
-
-[data-tabs=element].for-load {
+.tabs__element.for-load {
   position: static;
   visibility: visible;
   opacity: 1;
@@ -2308,10 +2292,20 @@ button,
   transition: none;
 }
 
-[data-tabs=element].is-active {
+.tabs__element.is-active {
   z-index: 1;
   visibility: visible;
   opacity: 1;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .season-tickets {
