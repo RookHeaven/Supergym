@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     column-gap: 55px;
 
     @include vp-1199 {

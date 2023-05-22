@@ -1893,6 +1893,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-column-gap: 55px;
      -moz-column-gap: 55px;
           column-gap: 55px;
@@ -2019,7 +2022,7 @@ button,
 .video {
   position: absolute;
   right: 47%;
-  top: 72%;
+  top: 288px;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
