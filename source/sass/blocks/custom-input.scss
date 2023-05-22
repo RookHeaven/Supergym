@@ -43,8 +43,9 @@
     position: absolute;
     left: 0;
     bottom: -21px;
-    font-size: 13px;
-    width: 130%;
+    font-size: 12px;
+    width: 100%;
+    white-space: nowrap;
 
     &.is-invalid {
       color: #ff0000;
