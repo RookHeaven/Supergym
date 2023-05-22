@@ -1860,9 +1860,11 @@ button,
   background-color: #000000;
 }
 
-.video picture {
+.video img {
   position: relative;
   z-index: 1;
+  left: 0;
+  bottom: 0;
 }
 
 .video__iframe {
