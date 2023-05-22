@@ -2049,14 +2049,16 @@ button,
     margin-right: auto;
   }
 }
+.video img {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
 @media (max-width: 767px) {
   .video img {
     width: 100%;
   }
-}
-.video picture {
-  position: relative;
-  z-index: 1;
 }
 .video__iframe {
   position: absolute;

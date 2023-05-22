@@ -27,14 +27,14 @@
   }
 
   img {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+
     @include vp-767 {
       width: 100%;
     }
-  }
-
-  picture {
-    position: relative;
-    z-index: 1;
   }
 
   &__iframe {
