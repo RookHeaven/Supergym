@@ -94,7 +94,7 @@
 
     p {
       margin-top: 0;
-      margin-bottom: auto;
+      margin-bottom: 10px;
       font-size: 18px;
       line-height: 25px;
 
@@ -148,7 +148,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 18px 34px 29px 28px;
-    height: 100%;
+    min-height: 211px;
     border: 7px solid;
     border-image: $border-gradient;
     border-image-slice: 1;
@@ -201,6 +201,7 @@
     position: relative;
     align-self: flex-start;
     padding: 0;
+    margin-top: auto;
     border: none;
     font-size: 14px;
     line-height: 16px;

@@ -82,14 +82,36 @@
   }
 
   &__info-list {
+    position: relative;
     display: grid;
-    grid-template-columns: 58% 42%;
-    column-gap: 57px;
+    grid-template-columns: 57% auto;
+    column-gap: 61px;
+    row-gap: 19px;
     margin: 0;
     padding: 0;
     list-style: none;
 
+    &::after {
+      position: absolute;
+      left: 57%;
+      top: 6px;
+      bottom: 3px;
+      content: "";
+      border-right: 1px solid $color-light-slate-grey;
+
+      @include vp-1199 {
+        top: 9px;
+        bottom: 8px;
+        left: 58%;
+      }
+
+      @include vp-767 {
+        content: none;
+      }
+    }
+
     @include vp-1199 {
+      grid-template-columns: 58% auto;
       column-gap: 47px;
     }
 
@@ -145,6 +167,7 @@
     }
 
     a {
+      display: block;
       font-size: 14px;
       line-height: 21px;
       transition: opacity $trans-default;
@@ -162,22 +185,6 @@
         font-size: 18px;
         line-height: 27px;
       }
-    }
-  }
-
-  &__info-item:nth-child(odd) {
-    border-right: 1px solid $color-light-slate-grey;
-
-    @include vp-767 {
-      border-right: none;
-    }
-  }
-
-  &__info-item:nth-child(odd):not(:nth-last-child(-n+2)) {
-    padding-bottom: 19px;
-
-    @include vp-767 {
-      padding-bottom: 0;
     }
   }
 }

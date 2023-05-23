@@ -25,10 +25,18 @@
 
   &__logo {
     margin-top: 10px;
-    cursor: default;
+    cursor: pointer;
 
     @include vp-1199 {
       margin-top: 0;
+    }
+
+    @include hover-focus {
+      opacity: 0.6;
+    }
+
+    @include active {
+      opacity: 0.8;
     }
 
     img {

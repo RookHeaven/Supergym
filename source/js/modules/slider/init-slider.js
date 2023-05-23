@@ -14,6 +14,7 @@ const getSlider = () => {
     coachesSlider = new Swiper(coachesSwiper, {
       direction: 'horizontal',
       loop: true,
+      initialSlide: -4,
       slidesPerView: 4,
       spaceBetween: 40,
       speed: 1000,
